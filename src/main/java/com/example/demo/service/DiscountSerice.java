@@ -37,13 +37,13 @@ public class DiscountSerice {
 
         }
 
-        return null;
+        return BigDecimal.ZERO;
     }
 
     public BigDecimal generateFinalPrice(ProductDetails productDetails) {
 
         if (null == productDetails) {
-            return null;
+            return BigDecimal.ZERO;
         }
 
         BigDecimal discountedPrice = productDetails.getPrice().multiply(new BigDecimal(productDetails.getQuantity()));
