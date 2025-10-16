@@ -9,6 +9,13 @@ import java.math.BigDecimal;
 @Getter
 public class ProductDetails {
 
+    public ProductDetails(int quantity, String name, String category, BigDecimal price) {
+        this.quantity = quantity;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+    }
+
     private int id;
     private String name;
     private String category;

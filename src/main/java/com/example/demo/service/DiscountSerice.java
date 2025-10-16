@@ -13,7 +13,7 @@ public class DiscountSerice {
     public BigDecimal generateDiscount(ProductDetails productDetails) {
 
         if (null == productDetails) {
-            return null;
+            return BigDecimal.ZERO;
         }
 
         BigDecimal finalPrice = productDetails.getPrice().multiply(new BigDecimal(productDetails.getQuantity()));
